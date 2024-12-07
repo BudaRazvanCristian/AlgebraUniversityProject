@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div>Test</div>
-</body>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-logo">
+          <img src="assets/img/Algebra-logo.png" />
+          <p>Algebra</p>
+          <p id="logo-name">University</p>
+          <div>
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+          </div>
+        </div>
+        <ul class="navbar-info">
+          <li id="navbar-content"><a href="">Home</a></li>
+          <li id="navbar-content"><a href="">About Us</a></li>
+          <li id="navbar-content"><a href="">News</a></li>
+          <li id="navbar-content"><a href="">Contact</a></li>
+          <li id="curriculum">
+            <a href="">Curriculum</a>
+          </li>
+          <li id="login"><a href="">Log In</a></li>
+        </ul>
+      </div>
+      <div class="container-header">
+        <div class="header-img">
+          <img src="assets/img/algebra2.jpg" />
+        </div>
+        <div class="header-details">
+          <p id="details-text-1">Your Gateway to a Digital Future</p>
+          <hr />
+          <p id="details-text-2">
+            Start your journey here at Algebra University, leading Croatian
+            education provider
+          </p>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider-content">
+          <div class="text-section">
+            <h1>Our Study Programmes</h1>
+            <p>
+              We currently offer 17 professional study programmes at bachelor
+              and master level.
+            </p>
+            <a href="#" class="slider-button">Discover</a>
+          </div>
+          <div class="courses">
+            <div class="course">
+              <img src="assets/img/softwareEngineering.jpg" />
+              <p>Software Engineering</p>
+            </div>
+            <div class="course">
+              <img src="assets/img/digitalMarketing.jpg" />
+              <p>Digital Marketing</p>
+            </div>
+            <div class="course">
+              <img src="assets/img/gameDevelopment.jpg" />
+              <p>Game Development</p>
+            </div>
+            <div class="course">
+              <img src="assets/img/cyberSecurity.jpg" />
+              <p>Cyber Security</p>
+            </div>
+            <div class="course">
+              <img src="assets/img/multimediaProduction.jpg" />
+              <p>Multimedia Production</p>
+            </div>
+            <div class="course">
+              <img src="assets/img/3DDesign.jpg" />
+              <p>3D Design</p>
+            </div>
+            <div class="course">
+              <img src="assets/img/artificialIntelligence.jpg" />
+              <p>Data Science and Artificial Intelligence</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; Algebra University. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of service</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/algebra_university/"
+            target="_blank"
+          >
+            <img
+              src="assets/img/instagram_logo.svg"
+              alt="Instagram Logo"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/navbar.js"></script>
+  </body>
 </html>
