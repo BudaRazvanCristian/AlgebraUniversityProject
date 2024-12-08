@@ -1,7 +1,9 @@
 :root {
+  --black: #161616;
   --dark-gray: #2b2d42;
-  --muted-blue: #8d99ae;
+  --muted-blue: #a1a9b6;
   --light-gray: #edf2f4; /* Very light gray, almost white */
+  --medium-gray: #e2e6e8;
   --bright-red: #ef233c;
   --deep-red: #d90429;
   --light-pink: #c40f61;

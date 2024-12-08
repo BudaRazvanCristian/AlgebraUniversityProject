@@ -6,7 +6,7 @@ body {
   margin: 0;
   /* padding: 10px; */
   font-family: "Montserrat", "Rubik", sans-serif;
-  background-color: var(--light-gray);
+  /* background-color: var(--light-gray); */
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
 }
 
 .header-img img {
-  background-color: var(--muted-blue);
+  background-color: var(--medium-gray);
   width: 63.4em; /* Lățimea div-ului */
   height: auto;
   box-sizing: border-box;
@@ -98,7 +98,7 @@ body {
 }
 
 .text-section p {
-  color: var(--muted-blue);
+  color: var(--black);
   margin: 10px 0 20px;
 }
 
@@ -131,7 +131,7 @@ body {
 }
 
 .course p {
-  color: var(--light-pink);
+  color: var(--black);
 }
 
 .course img {
@@ -146,6 +146,71 @@ body {
   font-size: 14px;
   font-weight: bold;
   color: var(--muted-blue);
+}
+
+.collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collapse-content {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 2em;
+}
+
+#collapse-text {
+  color: var(--light-pink);
+}
+
+.content-section {
+  width: 450px;
+}
+
+.collapsible {
+  background-color: var(--light-gray);
+  cursor: pointer;
+  padding: 18px;
+  width: 480px;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 8px 6px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.section-collapse {
+  justify-content: center;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: var(--light-pink);
+  box-shadow: 10px 1px 30px rgb(209, 154, 179);
+  color: var(--light-gray);
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.section-collapse p {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.collapse-button {
+  color: var(--light-gray);
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.collapse-textsection p {
+  color: var(--black);
 }
 
 @media screen and (max-width: 768px) {
@@ -167,5 +232,12 @@ body {
   }
   #details-text-2 {
     margin-bottom: 2em;
+  }
+
+  .slider-content {
+    display: block;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
   }
 }
