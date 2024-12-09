@@ -1,0 +1,103 @@
+@import url("variables.css");
+@import url("navbar.css");
+@import url("footer.css");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-img img {
+  background-color: var(--medium-gray);
+  width: 63.4em;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.header-details {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-pink);
+  height: 460px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 4em;
+  padding-right: 2em;
+}
+
+#details-text-1 {
+  display: flex;
+  margin-top: 3em;
+  margin-bottom: 12px;
+  color: var(--light-gray);
+  font-weight: 600;
+  font-size: 2.8em;
+}
+
+.header-details hr {
+  display: flex;
+  justify-content: flex-start;
+  width: 14em;
+  margin: 6px 6px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+#details-text-2 {
+  display: flex;
+  color: var(--light-gray);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container-description {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 24px;
+}
+
+.description-1 {
+  width: 60em;
+}
+
+.description-1 p {
+  margin-bottom: 20px;
+}
+
+#text-1 {
+  color: var(--light-pink);
+}
+
+ul li:hover {
+  cursor: pointer;
+  color: var(--deep-pink);
+  font-weight: bold;
+}
+
+.description-2 {
+  position: sticky;
+  top: 0;
+  background-color: var(--light-gray);
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.description-2 p {
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.description-2 ul li {
+  color: var(--light-pink);
+}
+
+.description-2 ul li:hover {
+  font-weight: pointer;
+  color: var(--deep-pink);
+}
