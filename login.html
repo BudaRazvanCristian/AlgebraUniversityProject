@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="style/logIn.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-col">
+        <div class="btn-box">
+          <button class="btn btn-1" id="login">Sign In</button>
+          <button class="btn btn-2" id="register">Sign Up</button>
+        </div>
+        <!--Login form container-->
+        <form class="form-box login-form">
+          <div class="form-title">
+            <span>Sign In</span>
+          </div>
+          <div class="form-inputs">
+            <div class="input-box">
+              <input
+                type="text"
+                class="input input-field"
+                placeholder="Username"
+                required
+              />
+              <i class="fa-regular fa-user icon"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="password"
+                id="logPassword"
+                class="input input-field"
+                placeholder="Password"
+                oninput="changeIcon(this.value)"
+                required
+              />
+              <i
+                class="fa-solid fa-lock icon"
+                id="log-pass-icon"
+                onclick="myLogPassword()"
+              ></i>
+            </div>
+            <div class="forgot-pass">
+              <a href="#">Forgot Password?</a>
+            </div>
+            <div class="input-box">
+              <button class="input submit-btn">
+                <span>Sign In</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <!--Register form container-->
+        <form class="form-box register-form">
+          <div class="form-title">
+            <span>Sign Up </span>
+          </div>
+          <div class="form-inputs">
+            <div class="input-box">
+              <input
+                type="text"
+                class="input input-field"
+                placeholder="Username"
+                required
+              />
+              <i class="fa-regular fa-user icon"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                class="input input-field"
+                placeholder="Email"
+                required
+              />
+              <i class="fa-regular fa-envelope icon"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="password"
+                oninput="changeIcon(this.value)"
+                id="regPassword"
+                class="input input-field"
+                placeholder="Password"
+                required
+              />
+              <i
+                class="fa-solid fa-lock icon"
+                id="reg-pass-icon"
+                onclick="myRegPassword()"
+              ></i>
+            </div>
+            <div class="remember-me">
+              <input type="checkbox" id="remember-me-check" />
+              <label for="remember-me-check ">Remember me</label>
+            </div>
+            <div class="input-box">
+              <button class="input submit-btn">
+                <span>Sign In</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="scripts/login.js"></script>
+  </body>
+</html>
