@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="style/curriculum.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-logo" onclick="location.href='index.html'">
+        <img src="assets/img/Algebra-logo.png" alt="Algebra University Logo" />
+        <p>Algebra</p>
+        <p id="logo-name">University</p>
+
+        <div>
+          <button id="menu-toggle" aria-label="Toggle navigation menu">
+            ☰
+          </button>
+        </div>
+      </div>
+      <ul class="navbar-info">
+        <li id="navbar-content"><a href="index.html">Home</a></li>
+        <li id="navbar-content"><a href="aboutUs.html">About Us</a></li>
+        <li id="navbar-content"><a href="news.html">News</a></li>
+        <li id="navbar-content"><a href="contactUs.html">Contact</a></li>
+        <li id="curriculum">
+          <a href="#">Curriculum</a>
+        </li>
+        <li id="login"><a href="login.html">Log In</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1>Search Course</h1>
+      <input type="text" id="course-search" placeholder="Search course..." />
+      <ul id="course-list"></ul>
+
+      <h2>Selected Courses</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>ECTS</th>
+            <th>Hours</th>
+            <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody id="selected-courses"></tbody>
+      </table>
+
+      <p id="total-ects">Total ECTS: 0</p>
+      <p id="total-hours">Total Hours: 0</p>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; Algebra University. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/algebra_university/"
+            target="_blank"
+          >
+            <img
+              src="assets/img/instagram_logo.svg"
+              alt="Instagram Logo"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/curriculum.js" defer></script>
+  </body>
+</html>

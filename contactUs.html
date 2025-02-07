@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/contactUs.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="navbar-logo">
+          <img src="assets/img/Algebra-logo.png" />
+          <p>Algebra</p>
+          <p id="logo-name">University</p>
+
+          <div>
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+          </div>
+        </div>
+        <ul class="navbar-info">
+          <li id="navbar-content"><a href="index.html">Home</a></li>
+          <li id="navbar-content"><a href="aboutUs.html">About Us</a></li>
+          <li id="navbar-content"><a href="">News</a></li>
+          <li id="navbar-content"><a href="">Contact</a></li>
+          <li id="curriculum">
+            <a href="curriculum.html">Curriculum</a>
+          </li>
+          <li id="login"><a href="login.html">Log In</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form
+        action="https://www.fulek.com/mvc/supit/project-contact-form"
+        method="POST"
+      >
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="FullName" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required />
+
+        <label for="importance">Importance:</label>
+        <select id="importance" name="Importance" required>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+
+        <label for="receiveNewsletter">Receive Newsletter:</label>
+        <input
+          type="checkbox"
+          id="receiveNewsletter"
+          name="ReceiveNewsletter"
+          value="true"
+        />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="Message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; Algebra University. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of service</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/algebra_university/"
+            target="_blank"
+          >
+            <img
+              src="assets/img/instagram_logo.svg"
+              alt="Instagram Logo"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

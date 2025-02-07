@@ -35,6 +35,7 @@
               <input
                 type="text"
                 class="input input-field"
+                name="username"
                 placeholder="Username"
                 required
               />
@@ -45,21 +46,22 @@
                 type="password"
                 id="logPassword"
                 class="input input-field"
+                name="password"
                 placeholder="Password"
-                oninput="changeIcon(this.value)"
+                oninput="changeIcon(this.value, 'log-pass-icon')"
                 required
               />
               <i
                 class="fa-solid fa-lock icon"
                 id="log-pass-icon"
-                onclick="myLogPassword()"
+                onclick="togglePasswordVisibility('logPassword', 'log-pass-icon')"
               ></i>
             </div>
             <div class="forgot-pass">
               <a href="#">Forgot Password?</a>
             </div>
             <div class="input-box">
-              <button class="input submit-btn">
+              <button class="input submit-btn" type="submit">
                 <span>Sign In</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -69,13 +71,14 @@
         <!--Register form container-->
         <form class="form-box register-form">
           <div class="form-title">
-            <span>Sign Up </span>
+            <span>Sign Up</span>
           </div>
           <div class="form-inputs">
             <div class="input-box">
               <input
                 type="text"
                 class="input input-field"
+                name="username"
                 placeholder="Username"
                 required
               />
@@ -83,8 +86,9 @@
             </div>
             <div class="input-box">
               <input
-                type="text"
+                type="email"
                 class="input input-field"
+                name="email"
                 placeholder="Email"
                 required
               />
@@ -93,25 +97,26 @@
             <div class="input-box">
               <input
                 type="password"
-                oninput="changeIcon(this.value)"
                 id="regPassword"
                 class="input input-field"
+                name="password"
                 placeholder="Password"
+                oninput="changeIcon(this.value, 'reg-pass-icon')"
                 required
               />
               <i
                 class="fa-solid fa-lock icon"
                 id="reg-pass-icon"
-                onclick="myRegPassword()"
+                onclick="togglePasswordVisibility('regPassword', 'reg-pass-icon')"
               ></i>
             </div>
             <div class="remember-me">
               <input type="checkbox" id="remember-me-check" />
-              <label for="remember-me-check ">Remember me</label>
+              <label for="remember-me-check">Remember me</label>
             </div>
             <div class="input-box">
-              <button class="input submit-btn">
-                <span>Sign In</span>
+              <button class="input submit-btn" type="submit">
+                <span>Sign Up</span>
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>

@@ -1,0 +1,116 @@
+@import url("variables.css");
+@import url("navbar.css");
+@import url("footer.css");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+  background-color: var(--light-gray);
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* ---- TITLURI ---- */
+h1,
+h2 {
+  /* font-size: 20px; */
+  text-align: center;
+  color: var(--dark-gray);
+}
+
+/* ---- INPUT SEARCH ---- */
+#course-search {
+  width: calc(100% - 8px); /* Ajustează pentru padding */
+  max-width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid var(--medium-gray);
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+  background: white;
+  box-sizing: border-box; /* Asigură că padding-ul nu afectează dimensiunea */
+}
+
+#course-search:focus {
+  border-color: var(--muted-blue);
+  box-shadow: 0 0 5px rgba(161, 169, 182, 0.5);
+}
+
+/* ---- LISTA DE SUGESTII ---- */
+#course-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 200px;
+  overflow-y: auto;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#course-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+#course-list li:hover {
+  background: var(--muted-blue);
+  color: white;
+}
+
+/* ---- TABEL CURSURI SELECTATE ---- */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+th,
+td {
+  border: 1px solid var(--medium-gray);
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: var(--muted-blue);
+  color: white;
+}
+
+td button {
+  background: var(--bright-red);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+td button:hover {
+  background: var(--deep-red);
+}
+
+/* ---- TOTALURI ---- */
+#total-ects,
+#total-hours {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--dark-gray);
+}
